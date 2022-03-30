@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="calculator">
+      <p id="result"></p>
+
+      <table>
+        <tr>
+          <td>
+            <button id="acButton" onclick="clean()">
+              <img
+                class="acButtonImage"
+                src="./images/ac.svg"
+                alt="Clear button"
+              />
+            </button>
+          </td>
+
+          <td>
+            <button id="deleteButton" onclick="backspace()">
+              <img
+                class="deleteButtoImage"
+                src="./images/delete.svg"
+                alt="Delete button"
+              />
+            </button>
+          </td>
+
+          <td>
+            <button
+              class="operationButton"
+              id="divideButton"
+              onclick="insert('/')"
+            >
+              <img
+                class="operationButtonImage"
+                src="./images/divide.svg"
+                alt="Divide button"
+              />
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td><button class="numberButton" onclick="insert('7')">7</button></td>
+          <td><button class="numberButton" onclick="insert('8')">8</button></td>
+          <td><button class="numberButton" onclick="insert('9')">9</button></td>
+          <td>
+            <button
+              class="operationButton"
+              id="multiplyButton"
+              onclick="insert('*')"
+            >
+              <img
+                class="operationButtonImage"
+                src="./images/multiply.svg"
+                alt=""
+              />
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td><button class="numberButton" onclick="insert('4')">4</button></td>
+          <td><button class="numberButton" onclick="insert('5')">5</button></td>
+          <td><button class="numberButton" onclick="insert('6')">6</button></td>
+          <td>
+            <button
+              class="operationButton"
+              id="minusButton"
+              onclick="insert('-')"
+            >
+              <img
+                class="operationButtonImage"
+                src="./images/minus.svg"
+                alt=""
+              />
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td><button class="numberButton" onclick="insert('1')">1</button></td>
+          <td><button class="numberButton" onclick="insert('2')">2</button></td>
+          <td><button class="numberButton" onclick="insert('3')">3</button></td>
+          <td>
+            <button
+              class="operationButton"
+              id="plusButton"
+              onclick="insert('+')"
+            >
+              <img
+                class="operationButtonImage"
+                src="./images/plus.svg"
+                alt=""
+              />
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td><button class="numberButton" onclick="insert('0')">0</button></td>
+          <td><button id="dotButton" onclick="insert('.')">.</button></td>
+
+          <td>
+            <button
+              class="operationButton"
+              id="equalButton"
+              onclick="confirma()"
+            >
+              <img class="equalButtonImage" src="./images/equal.svg" alt="" />
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
